@@ -27,6 +27,12 @@ import { SearchResult } from './search/search-result.entity';
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         synchronize: true,
         // dropSchema: true,
+        ssl: true,
+        extra: {
+          ssl: {
+            rejectUnauthorized: false,
+          },
+        },
       }),
     }),
     TypeOrmModule.forFeature([Search, SearchResult]),
