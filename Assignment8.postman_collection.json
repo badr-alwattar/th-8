@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "c0cd2bc1-e5a0-408a-bf39-2b0da8dd6923",
+		"name": "Assignment 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24885372",
+		"_collection_link": "https://solar-flare-463288.postman.co/workspace/My-Workspace~05e7246d-ae33-4946-8fe7-b37e1c5b9a73/collection/24885372-c0cd2bc1-e5a0-408a-bf39-2b0da8dd6923?action=share&source=collection_link&creator=24885372"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/search/searchWithKeyword?search=أبومالح",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"search",
+						"searchWithKeyword"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "أبومالح"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/search",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/search/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"search",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://th-8.onrender.com",
+			"type": "string"
+		}
+	]
+}

@@ -42,4 +42,3 @@ import { SearchResult } from './search/search-result.entity';
   providers: [AppService, SearchService],
 })
 export class AppModule {}
-
