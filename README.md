@@ -11,14 +11,14 @@ This project was built with ❤️ using `NestJS` along with `Postgresql`.
 
 The project is deployed to the public internet, here is a postman collection ready for you to try the project.
 
-[Click here to download the Postman collection](https://github.com/badr-alwattar/th-8/Assignment8.postman_collection.json)
+[Click here to download the Postman collection](https://github.com/badr-alwattar/th-8/blob/master/Assignment8.postman_collection.json)
 
 
 ## API Reference
 
 #### Search for term
 
-```http
+```
   GET /search/searchWithKeyword
 ```
 
@@ -28,14 +28,14 @@ The project is deployed to the public internet, here is a postman collection rea
 
 #### Search history
 
-```http
+```
   GET /search
 ```
 
 
 #### Search results
 
-```http
+```
   GET /search/:id
 ```
 
